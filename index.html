@@ -251,7 +251,6 @@
             50% { opacity: 0.6; }
         }
 
-        .features-section h2 Mariano
         .features-section h2 {
             font-size: 2.2em;
             color: #ff4500;
@@ -395,6 +394,13 @@
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
+
+        /* Ensure full-screen layout on desktop while preserving mobile */
+        @media (min-width: 601px) {
+            header, .game-container, .features-section, .game-nav-section, footer {
+                max-width: none;
+            }
+        }
     </style>
     <script type="text/javascript">
         var ETdcr_xcM_JdIAwc={"it":4470448,"key":"d34f0"};
@@ -465,8 +471,8 @@
     </section>
 
     <footer>
-    <p>NOTE: You will download a mobile game similar to the one you selected.</p>
-    <p>&copy; 2025 GLXY.SITE - All rights reserved.</p>
+        <p>NOTE: You will download a mobile game similar to the one you selected.</p>
+        <p>© 2025 GLXY.SITE - All rights reserved.</p>
     </footer>
 
     <script>
